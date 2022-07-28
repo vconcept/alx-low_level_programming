@@ -117,8 +117,8 @@ int main(int argc, char *argv[])
 		}
 		if (j >= 0)
 		{
-			mul = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
-			addl = mul / 10, nout[k] = (mul % 10) + '0';
+			add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
+			addl = add / 10, nout[k] = (add % 10) + '0';
 		}
 	}
 	printf("%s\n", nout);
